@@ -1,0 +1,5 @@
+name: RopeMod
+version: 0.0.1
+author: Airneko
+main: tld.sima.ropemod.Main
+api-version: 1.20
