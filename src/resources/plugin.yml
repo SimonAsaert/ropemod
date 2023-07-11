@@ -3,3 +3,25 @@ version: 0.0.1
 author: Airneko
 main: tld.sima.ropemod.Main
 api-version: 1.20
+permissions:
+  ropemod.userope:
+    description: Allows a user to edit rope
+    default: false
+    children:
+      ropemod.ropetool: true
+      ropemod.delrope: true
+      ropemod.cancelRope: true
+
+commands:
+  ropeTool:
+    description: Summon rope creation/editing tool
+    usage: /<command>
+    permission: ropemod.ropetool
+  delRope:
+    description: Summon rope deletion tool
+    usage: /<command>
+    permission: ropemod.delrope
+  cancelRope:
+    description: Cancels current rope creation
+    usage: /<command>
+    permission: ropemod.cancelRope
